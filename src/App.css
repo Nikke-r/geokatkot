@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  height: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  top: 0;
+  user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.markerBtn {
+  background: none;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.markerBtn:hover {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addFormContainer {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  user-select: none;
+}
+
+.addForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 450px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.addInput {
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.addBtn {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(95, 200, 65, 1);
   color: white;
+  margin: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.cancelBtn {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(235, 55, 55, 1);
+  color: white;
+  margin: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notificationContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notificationSuccess {
+  width: 250px;
+  height: 100px;
+  background-color: rgba(95, 200, 65, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.notificationError {
+  width: 250px;
+  height: 100px;
+  background-color: rgba(235, 55, 55, 0.8);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
