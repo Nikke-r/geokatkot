@@ -97,7 +97,7 @@ const Map = () => {
         <div>
             <ReactMapGL
             { ...viewPort }
-            mapboxApiAccessToken='pk.eyJ1Ijoibmlra2VyIiwiYSI6ImNrOWloZmFxYzAzN2MzZ3F2anpvYXR5cjAifQ._E6TYOq88RgH_UU0LDs3SQ'
+            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
             mapStyle='mapbox://styles/mapbox/streets-v11'
             onViewportChange={newViewPort => setViewPort({ ...newViewPort })}
             onClick={handleMapClick}
